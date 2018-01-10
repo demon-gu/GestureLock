@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lock_background">
+
+    <com.picture.gesturelock.LockIndicator
+        android:id="@+id/lock_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <com.picture.gesturelock.GestureLockViewGroup
+        android:id="@+id/id_gestureLockViewGroup"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/lock_background"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        zhy:count="3"
+        zhy:tryTimes="5"
+        zhy:color_no_finger_inner_circle="#333333"
+        zhy:color_no_finger_outer_circle="#fff"
+        zhy:color_finger_on="@color/lock_hint_bg"/>
+
+</LinearLayout>
